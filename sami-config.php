@@ -5,8 +5,6 @@ use Sami\Version\GitVersionCollection;
 use Symfony\Component\Finder\Finder;
 use Sami\Sami;
 
-ini_set('memory_limit', '2G');
-
 $iterator = Finder::create()
     ->files()
     ->name('*.php')

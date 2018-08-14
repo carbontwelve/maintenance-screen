@@ -123,6 +123,28 @@ If you discover any security related issues, please email eridan200@mail.ru inst
 - [Eridan Domoratskiy][link-author]
 - [All Contributors][link-contributors]
 
+## Build API Documentation
+
+This projects API documentation is built using Sami. In order to build the documentation first get Sami as a phar file:
+
+```bash
+$ curl -O http://get.sensiolabs.org/sami.phar
+```
+
+Next build the documentation:
+
+```bash
+$ php sami.phar update sami-config.php
+```
+
+The API Documentation will be generated into the `docs` folder. If you would like to preview it locally you can easily do so with the built in php server:
+
+```bash
+$ php -S 127.0.0.1:3000 -t docs
+```
+
+Then visit [http://localhost:3000/master/](http://localhost:3000/master/) to view.
+
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
